@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UR PRINCESS🎀</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8d3e0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #ff6f91;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: white;
+    }
+
+    p {
+      color: white;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: white;
+      color: #ff6f91;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #ff6f91;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Hey,naughty boy!</h1>
+    <p>you have to apologize to mommy</p>
+    <button onclick="showMessage()">Tap here!</button>
+    <p id="message" style="margin-top: 10px; color: white;"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      const messages = [
+            "gatau caranya gimanaa",
+            "tapi kamu harus tetep say sorry sama mommy!",
+            "kayanya kamu harus manjain aku buat minta maaf",
+            "INI GAJELAS BAGET CODINGANNYA, TAPI LUCUK KAN SAYANG??😭🤙🏻💗"
+        ];
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      document.getElementById("message").innerText = messages[randomIndex];
+    }
+  </script>
+
+</body>
+
+</html>
