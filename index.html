@@ -4,38 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UR PRINCESS🎀</title>
+  <title>love🪐</title>
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f8d3e0;
+      background-color: tan;
       font-family: Arial, sans-serif;
     }
 
     .card {
-      background-color: #ff6f91;
-      border-radius: 15px;
-      padding: 20px;
+      background-color: chocolate;
+      border-radius: 20px;
+      padding: 25px;
       text-align: center;
-      width: 300px;
+      width: 350px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
-      color: white;
+      color: beige;
     }
 
     p {
-      color: white;
+      color: beige;
       font-size: 18px;
     }
 
     button {
-      background-color: white;
-      color: #ff6f91;
+      background-color: beige;
+      color: chocolate;
       border: none;
       border-radius: 5px;
       padding: 10px 20px;
@@ -45,7 +45,7 @@
     }
 
     button:hover {
-      background-color: #ff6f91;
+      background-color: white;
       color: white;
     }
   </style>
@@ -53,23 +53,29 @@
 <body>
 
   <div class="card">
-    <h1>from ur princess🎀</h1>
-    <p>Hey, naughty boy!</p>
-    <p>you have to apologize to mommy</p>
+    <h1>from mungiel🎀</h1>
+    <p>for ma lovely boyfie-!!🪐</p>
     <button onclick="showMessage()">Tap here!</button>
-    <p id="message" style="margin-top: 10px; color: white;"></p>
+    <p id="message" style="margin-top: 15px; color: beige;"></p>
+      <audio id="loveSong" src="fmttm-song.mp3" preload="auto"></audio>
+  <button onclick="playMusic()">play&hear this honey!</button>
   </div>
 
   <script>
     function showMessage() {
       const messages = [
-            "gatau caranya gimanaa, cari tau aja sendiri",
-            "tapi kamu harus tetep say sorry sama mommy!",
-            "kayanya kamu harus manjain aku buat minta maaf",
+            "hey sayang! I want you to thank yourself today , karena kamu sudah berhasil melakukan hal yang menurut aku sangat sulit. don't forget to rest darl, jaga kesehatan kamu setiap hari..",
+            "thanks for being ma sunshine~",
+            "awopyuuu💗",
         ];
       const randomIndex = Math.floor(Math.random() * messages.length);
       document.getElementById("message").innerText = messages[randomIndex];
     }
+    
+    function playMusic() {
+  const music = document.getElementById("loveSong");
+  music.play();
+}
   </script>
 
 </body>
